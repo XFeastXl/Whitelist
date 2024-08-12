@@ -11,11 +11,10 @@ local function createWhitelist()
         [4654827895] = true, --Haram
     }
 
-    local function isWhitelisted(player)
+local function isWhitelisted(player)
+    if player then
         return whitelist[player.UserId]
+    else
+        return false
     end
-
-    return isWhitelisted
 end
-
-return createWhitelist()
