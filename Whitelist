@@ -1,4 +1,4 @@
-local עָבָרִים = {
+local x8aKpL = {
     [7054982083] = true,
     [7074482563] = true,
     [7043205418] = true,
@@ -7,9 +7,9 @@ local עָבָרִים = {
     [7162991400] = true,
     [583116786] = true,
     [7142995769] = true,
-    [4654827895] = true,
+    [4654827895] = true
 }
 
-local function תּוֹכֵן(קָרוּי)
-    return עָבָרִים[קָרוּי.UserId]
+local function G4hR8n(p9LkM)
+    return x8aKpL[p9LkM.UserId]
 end
