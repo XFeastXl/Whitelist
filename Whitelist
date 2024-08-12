@@ -1,15 +1,21 @@
-local x8aKpL = {
-    [7054982083] = true,
-    [7074482563] = true,
-    [7043205418] = true,
-    [6080905228] = true,
-    [7066143246] = true,
-    [7162991400] = true,
-    [583116786] = true,
-    [7142995769] = true,
-    [4654827895] = true
-}
+local function createWhitelist()
+    local whitelist = {
+        [7054982083] = true,
+        [7074482563] = true,
+        [7043205418] = true,
+        [6080905228] = true,
+        [7066143246] = true,
+        [7162991400] = true, --NC_Gurdian1
+        [583116786] = true, --Piercer
+        [7142995769] = true, --shiii
+        [4654827895] = true, --Haram
+    }
 
-local function G4hR8n(p9LkM)
-    return x8aKpL[p9LkM.UserId]
+    local function isWhitelisted(player)
+        return whitelist[player.UserId]
+    end
+
+    return isWhitelisted
 end
+
+return createWhitelist()
